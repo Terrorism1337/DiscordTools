@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Discord;
+using Discord.Gateway;
+
+namespace Lucifer_Connections
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.Title = "Lucifer Connections V1";
+            DiscordClient client = new DiscordClient();
+            client.Token = "PUT YOUR TOKEN HERE";
+
+            client.AddConnectedAccount(AccountType.ACCOUNTYPEHERE, "NAME HERE", true);
+        }
+    }
+}
